@@ -33,14 +33,14 @@ SUDOKU.checkPuzzle = function () {
                     'possibleValues': [],
                     'row': i,
                     'column': x
-                }
+                };
             } else if (puz[i][x] === undefined || puz[i][x].value === undefined) {
                 puz[i][x] = {
                     'value': undefined,
                     'possibleValues': this.getPossibleValues(i, x),
                     'row': i,
                     'column': x
-                }
+                };
                 undefinedValues = true;
             }
         }
